@@ -1,16 +1,22 @@
 import React from 'react';
 import {TodoItem} from './TodoItem';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export const TodoList = (props) => {
   return (
-    <ul className="todo-list">
+    <ReactCSSTransitionGroup
+      component="ul"
+      className="todo-list"
+      transitionName="todo-transition"
+      transitionEnterTimeout={70}
+      transitionLeaveTimeout={70}>
       {props.todos.map(todo =>
         <TodoItem handleToggle={props.handleToggle}
           handleRemove={props.handleRemove}
           key={todo.id}
           {...todo}/>
       )}
-    </ul>
+    </ReactCSSTransitionGroup>
   );
 }
 
