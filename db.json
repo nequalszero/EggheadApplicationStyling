@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Setup fetch",
       "isComplete": false
+    },
+    {
+      "id": 80289,
+      "name": "Test Animation",
+      "isComplete": true
     }
   ]
 }
