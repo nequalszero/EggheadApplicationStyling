@@ -14,3 +14,7 @@ BEM naming structure (block element modifier)
 Video 3:
 class selector e.g. `[class^="todo-list__item"]` will style any elements whose
 class begins with the specified class.
+
+CSS Selectors:
++ used for sibling selection
+::before and ::after allows content to be added before and after an element
