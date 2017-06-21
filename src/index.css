@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.container {
+.container > div {
   min-height: 100vh;
   max-width: 730px;
   width: 100%;

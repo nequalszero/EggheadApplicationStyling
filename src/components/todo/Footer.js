@@ -1,12 +1,13 @@
 import React from 'react';
-import {Link} from '../router';
+import {FooterRadio} from '../router';
 
 export const Footer = () => {
   return (
-    <div className="Footer">
-      <Link to='/'>All, </Link>
-      <Link to='/active'>Active, </Link>
-      <Link to='/complete'>Completed</Link>
-    </div>
+    <fieldset className="filters">
+      <legend className="filters__title">Show:</legend>
+      <FooterRadio to='/'>All, </FooterRadio>
+      <FooterRadio to='/active'>Active, </FooterRadio>
+      <FooterRadio to='/complete'>Completed</FooterRadio>
+    </fieldset>
   )
 }

@@ -2,3 +2,15 @@ Run development build at http://localhost:3000/ by typing 'npm start'
 Run tests by typing 'npm test'
 Installed json-server by typing 'sudo npm i -g json-server'
 Ran json-server at port 8080 by typing 'json-server -p 8080 --watch db.json'
+
+
+CSS Notes:
+Video 1:
+:root selector refers to the html element
+
+Video 2:
+BEM naming structure (block element modifier)
+
+Video 3:
+class selector e.g. `[class^="todo-list__item"]` will style any elements whose
+class begins with the specified class.

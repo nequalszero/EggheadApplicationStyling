@@ -3,7 +3,7 @@ import {TodoItem} from './TodoItem';
 
 export const TodoList = (props) => {
   return (
-    <ul>
+    <ul className="todo-list">
       {props.todos.map(todo =>
         <TodoItem handleToggle={props.handleToggle}
           handleRemove={props.handleRemove}

@@ -1,10 +1,12 @@
 import React from 'react';
 
 export const TodoForm = (props) => (
-  <form onSubmit={props.handleSubmit}>
-    <input type="text"
+  <form onSubmit={props.handleSubmit} className="add-todo">
+    <input type="text" className="add-todo__input"
       value={props.currentTodo}
-      onChange={props.handleInputChange}/>
+      onChange={props.handleInputChange}
+      placeholder="new todo"/>
+    <button type="submit" className="add-todo__button"></button>
   </form>
 )
 

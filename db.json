@@ -13,12 +13,17 @@
     {
       "id": 3,
       "name": "Connect to Server",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": 4,
       "name": "Setup fetch",
-      "isComplete": true
+      "isComplete": false
+    },
+    {
+      "id": 70429,
+      "name": "fdsa",
+      "isComplete": false
     }
   ]
 }

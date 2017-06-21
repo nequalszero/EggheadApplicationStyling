@@ -68,7 +68,6 @@ class App extends Component {
     this.setState({message: msg});
     if (this.state.timeout) clearTimeout(this.state.timeout);
     const timeout = setTimeout(() => this.setState({message: '', timeout: null}), 2500);
-    console.log("timeout: ", timeout);
     this.setState({timeout});
   }
 
@@ -88,24 +87,16 @@ class App extends Component {
     const displayTodos = filterTodos(this.state.todos, this.context.route);
 
     return (
-      <div className="App">
-        {/* <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React Todos</h2>
-        </div> */}
-        <div className="Todo-App">
-          {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
-          {this.state.message && <span className='success'>{this.state.message}</span>}
-          <div className="Todo-List">
-            <TodoForm currentTodo={this.state.currentTodo}
-              handleInputChange={this.handleInputChange}
-              handleSubmit={submitHandler}/>
-            <TodoList handleToggle={this.handleToggle}
-              handleRemove={this.handleRemove}
-              todos={displayTodos}/>
-            <Footer />
-          </div>
-        </div>
+      <div className="todo-app">
+        {/* {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
+        {this.state.message && <span className='success'>{this.state.message}</span>} */}
+        <TodoForm currentTodo={this.state.currentTodo}
+          handleInputChange={this.handleInputChange}
+          handleSubmit={submitHandler}/>
+        <TodoList handleToggle={this.handleToggle}
+          handleRemove={this.handleRemove}
+          todos={displayTodos}/>
+        <Footer />
       </div>
     );
   }
